@@ -1,4 +1,17 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/3co7c-dw)
-# Test status in Github.Actions: [![Ci/CD](../../actions/workflows/ci.yaml/badge.svg?branch=main&event=workflow_dispatch)](../../actions/workflows/ci.yaml)
+# ITMO Computer Architecture 2023 — Модель кэш-памяти на C++
 
-Проверяется вывод в последнем запуске автотестов. 
+## Описание
+Симулятор кэш-памяти для анализа:
+- Политик замещения (LRU, FIFO и др.)
+- Параметров кэша: размер, ассоциативность, размер блока
+- Эффективности работы (hit/miss rate)
+
+## Структура
+- `src/` — код модели кэша
+- `examples/` — примеры трасс обращений к памяти
+- `results/` — примеры результатов симуляции
+
+## Сборка и запуск
+```bash
+g++ -std=c++17 -o cache_simulator main.cpp
+./cache_simulator trace_file.txt
