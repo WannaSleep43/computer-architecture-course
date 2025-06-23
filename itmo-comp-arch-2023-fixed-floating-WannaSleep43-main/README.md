@@ -1,1 +1,25 @@
-# Test status in Github.Actions: [![CI/CD](../../actions/workflows/ci.yaml/badge.svg?branch=main&event=workflow_dispatch)](../../actions/workflows/ci.yaml)
+# ITMO Computer Architecture 2023 — Fixed и Floating Point арифметика на C++
+
+## Описание
+Практическое изучение представления чисел:
+- Fixed-point (фиксированная запятая)
+- Floating-point (плавающая запятая)
+
+Реализованы базовые операции:
+- Конвертация между типами
+- Сложение, вычитание
+- Округление
+
+## Структура
+- `src/` — реализация классов чисел и операций
+- `tests/` — тесты для проверки корректности
+- `main.cpp` — примеры использования
+
+## Зависимости
+- C++17 и выше
+- g++, Clang или любой совместимый компилятор
+
+## Сборка и запуск
+```bash
+g++ -std=c++17 -o fixed_float main.cpp
+./fixed_float
