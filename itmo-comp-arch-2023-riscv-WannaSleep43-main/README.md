@@ -1,4 +1,22 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/hseNUA9k)
-# Test status in Github.Actions: [![Ci/CD](../../actions/workflows/ci.yaml/badge.svg?branch=main&event=workflow_dispatch)](../../actions/workflows/ci.yaml)
+# ITMO Computer Architecture 2023 — Дизассемблер и анализатор инструкций RISC-V
 
-Проверяется вывод в последнем запуске автотестов. 
+## Описание
+Консольный инструмент для:
+- Парсинга бинарных инструкций RISC-V
+- Дизассемблирования в человекочитаемый код
+- Частичного анализа структуры программы
+
+Поддерживаются базовые инструкции RV32I:
+- Арифметика
+- Логические операции
+- Управление потоком
+
+## Структура
+- `src/` — исходники анализатора
+- `tests/` — бинарные образы для тестирования
+- `README.md` — документация
+
+## Сборка и запуск
+```bash
+g++ -std=c++17 -o riscv_disasm main.cpp
+./riscv_disasm binary_input_file
