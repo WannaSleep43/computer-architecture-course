@@ -1,4 +1,23 @@
-[![Ci/CD](../../actions/workflows/ci.yaml/badge.svg?branch=main&event=workflow_dispatch)](../../actions/workflows/ci.yaml)
+# ITMO Computer Architecture 2023 — Цифровой стек на Verilog и Logisim
+
+## Описание
+Учебный проект по курсу "Архитектура компьютеров". Реализация структуры стека с помощью цифровой схемы:
+- **Модель на Logisim** для визуального моделирования
+- **Verilog-описание схемы** для более глубокой аппаратной симуляции
+
+## Структура
+- `logisim/` — схема стека для Logisim
+- `verilog/` — Verilog-модули, описание поведения и тестбенчи
+- `README.md` — текущее описание
+
+## Зависимости
+- [Logisim Evolution](https://github.com/reds-heig/logisim-evolution) (для схем)
+- Icarus Verilog или другой симулятор Verilog
+
+## Функции стека
+- Операции PUSH и POP
+- Обработка переполнения и опустошения
+- Реализация на триггерах и регистрах
 
 ## Проверка verilog локально (из корня репозитория):
 
