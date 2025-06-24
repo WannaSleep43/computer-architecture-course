@@ -8,7 +8,7 @@
 * Нужно написать транслятор этого машинного кода в текст программы на ассемблере (дизассемблер)
 * Обрабатывать нужно только две секции: text и symtab
 
-С полным условием можно ознакомиться в файле [assignment.pdf](/assignment.pdf)
+С полным условием можно ознакомиться в файле [assignment.pdf]([/assignment.pdf](https://github.com/WannaSleep43/computer-architecture-course/blob/main/itmo-comp-arch-2023-riscv-WannaSleep43-main/assignment.pdf))
 
 ## Структура
 - `src/` — исходники анализатора
